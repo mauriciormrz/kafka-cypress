@@ -19,8 +19,8 @@
     "cypress-cucumber-preprocessor": "^4.1.4",
     "cypress-plugin-tab": "^1.0.5",
     "cypress-xpath": "^1.6.2",
-    "multiple-cucumber-html-reporter": "^1.18.0",
-    "kafkajs": "^2.0.0"
+    "kafkajs": "^2.0.0",
+    "multiple-cucumber-html-reporter": "^1.18.0"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true,
@@ -32,4 +32,3 @@
     }
   }
 }
-

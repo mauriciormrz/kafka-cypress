@@ -43,7 +43,9 @@ Cypress.Commands.add('goToLoginPage', () => {
         }
     })
     cy.clickIfElemExists(signInPage.getAcceptCookiesStringButton());
-    homePage.getDropDownLink('Sign-In').should('contain.text', 'Sign In').click();
+    homePage.getDropDownLink('Sign-In')
+        .should('be.visible')
+        .and('contain.text', 'Sign In').click();
 })
 
 
@@ -59,7 +61,12 @@ Cypress.Commands.add('clickIfElemExists', (elem) => {
 
 Cypress.Commands.add('welComeHomePage', () => {
 
-    homePage.getDropDownLink('Sign-In').should('contain.text', 'my Account').trigger('mouseover');
+    homePage.getDropDownLink('Sign-In')
+        .should('be.visible')
+        .and('contain.text', 'my Account')
+        .trigger('mouseover');
     homePage.getDropDownLink('my Account').trigger('mouseover');
-    myAccountMenu.getWelcomeText().should('contain', 'Welcome');
+    myAccountMenu.getWelcomeText()
+        .should('be.visible')
+        .and('contain', 'Welcome');
 })

@@ -24,27 +24,6 @@ class SignInPage {
         return cy.get('#login-btn');
     }
 
-    //getCreateAnAccountButton() {
-    //    return  cy.get('#toggle-create-account-btn');
-    //}
-
-    //
-    //    getCreateAccountButton() {
-    //        return cy.get('#toggle-create-account-btn');
-    //    }
-    //
-
-
-    //
-    //    getErrorMessageText() {
-    //        return cy.xpath("//div[contains(text(),'Incorrect username or password')]");
-    //    }
-    //
-    //    getAcceptCookiesButton() {
-    //        return cy.get('button#onetrust-accept-btn-handler');
-    //    }
-    //    
-    //
 }
 
 export default SignInPage;
