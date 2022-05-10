@@ -1,15 +1,36 @@
+
+
 {
+  "baseUrl": "https://ext5.youngliving.com/us/en",
+  "watchForFileChanges":true,
+  "viewportWidth": 1280,
+  "viewportHeight": 1280,
+  "waitForAnimation":true,
+  "animationDistanceTreshold":20,
+  "defaultCommandTimeout": 5000,
+  "execTimeout":60000,
   "pageLoadTimeout": 30000,
+  "responseTimeout":15000,
+  "requestTimeout":15000,
   "scrollBehavior": false,
-  "defaultCommandTimeout": 4000,
+  "video":true,
+  "failOnStatusCode":true,
+
   "env": {
     "url": "https://clone.youngliving.com",
     "username": "yleo",
-    "password": "I know what 2 do"
+    "password": "I know what 2 do",
+    "db": {
+      "user": "cmsuser",
+      "password": "WychekEs8#Stasck",
+      "connectString": "oracln.yleo.us:1521/ylcln.yleo.us"
+    }
   },
-  "viewportWidth": 1280,
-  "viewportHeight": 1280,
-  "testFiles": "**/*.feature",
+
+  "testFiles": [
+    "**/*.feature",
+    "**/*spec.js"
+  ],
   "retries": {
     "runMode": 1,
     "openMode": 0

@@ -20,7 +20,8 @@
     "cypress-plugin-tab": "^1.0.5",
     "cypress-xpath": "^1.6.2",
     "kafkajs": "^2.0.0",
-    "multiple-cucumber-html-reporter": "^1.18.0"
+    "multiple-cucumber-html-reporter": "^1.18.0",
+    "oracledb": "^5.3.0"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true,
